@@ -34,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2683554E2242848400F6E670 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		2683554F2242849900F6E670 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		26835550224284BE00F6E670 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		268C554E2240244B00AFDE9C /* Kamu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55512240244B00AFDE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		268C55532240244B00AFDE9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +77,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		268355512242A66200F6E670 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				268C555D2240244E00AFDE9C /* Info.plist */,
+				268C55582240244E00AFDE9C /* Assets.xcassets */,
+				26835550224284BE00F6E670 /* Shared.xcconfig */,
+				2683554F2242849900F6E670 /* Release.xcconfig */,
+				2683554E2242848400F6E670 /* Debug.xcconfig */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		268C55452240244B00AFDE9C = {
 			isa = PBXGroup;
 			children = (
@@ -100,9 +115,8 @@
 				268C55512240244B00AFDE9C /* AppDelegate.swift */,
 				268C55532240244B00AFDE9C /* ViewController.swift */,
 				268C55552240244B00AFDE9C /* Main.storyboard */,
-				268C55582240244E00AFDE9C /* Assets.xcassets */,
 				268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */,
-				268C555D2240244E00AFDE9C /* Info.plist */,
+				268355512242A66200F6E670 /* Supporting Files */,
 			);
 			path = Kamu;
 			sourceTree = "<group>";
@@ -451,11 +465,12 @@
 		};
 		268C55772240244E00AFDE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2683554E2242848400F6E670 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = Kamu/Info.plist;
+				INFOPLIST_FILE = "Kamu/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,11 +484,12 @@
 		};
 		268C55782240244E00AFDE9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2683554F2242849900F6E670 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = Kamu/Info.plist;
+				INFOPLIST_FILE = "Kamu/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

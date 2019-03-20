@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Kamu.xcodeproj">
+      location = "self:../Kamu/Supporting Files">
    </FileRef>
 </Workspace>

@@ -1,0 +1,12 @@
+//
+//  Shared.xcconfig
+//  Kamu
+//
+//  Created by Vanessa Medeiros on 20/03/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+IDENTIFIER = com.limamedeiros.kamu
+NAME = Kamu
