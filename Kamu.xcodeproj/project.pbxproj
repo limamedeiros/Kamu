@@ -93,8 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				268C55502240244B00AFDE9C /* Kamu */,
-				268C55652240244E00AFDE9C /* KamuTests */,
-				268C55702240244E00AFDE9C /* KamuUITests */,
+				268C55652240244E00AFDE9C /* Unit Tests */,
+				268C55702240244E00AFDE9C /* UI Tests */,
 				268C554F2240244B00AFDE9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,22 +121,22 @@
 			path = Kamu;
 			sourceTree = "<group>";
 		};
-		268C55652240244E00AFDE9C /* KamuTests */ = {
+		268C55652240244E00AFDE9C /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
 				268C55662240244E00AFDE9C /* KamuTests.swift */,
 				268C55682240244E00AFDE9C /* Info.plist */,
 			);
-			path = KamuTests;
+			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
-		268C55702240244E00AFDE9C /* KamuUITests */ = {
+		268C55702240244E00AFDE9C /* UI Tests */ = {
 			isa = PBXGroup;
 			children = (
 				268C55712240244E00AFDE9C /* KamuUITests.swift */,
 				268C55732240244E00AFDE9C /* Info.plist */,
 			);
-			path = KamuUITests;
+			path = "UI Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,7 +508,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = KamuTests/Info.plist;
+				INFOPLIST_FILE = "Unit Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,7 +529,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = KamuTests/Info.plist;
+				INFOPLIST_FILE = "Unit Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +549,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = KamuUITests/Info.plist;
+				INFOPLIST_FILE = "UI Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,7 +569,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = KamuUITests/Info.plist;
+				INFOPLIST_FILE = "UI Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
