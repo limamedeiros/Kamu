@@ -41,19 +41,18 @@ workflows:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
     - git-clone@4.0.14: {}
     - cache-pull@2.0.1: {}
-    - script@1.1.5:
-        title: Do anything with Script step
     - certificate-and-profile-installer@1.10.1: {}
-    - swiftlint@0.4.2:
+    - git::https://github.com/limamedeiros/bitrise-step-swiftlint@master:
         inputs:
-        - linting_path: "$BITRISE_SOURCE_DIR"
-    - xcode-test@2.1.1:
+        - reporter: html
+    - xcode-test@2.2.0:
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
+        - generate_code_coverage_files: 'yes'
         - scheme: "$BITRISE_SCHEME"
     - xcode-analyze@2.0.0: {}
     - deploy-to-bitrise-io@1.3.19: {}
-    - cache-push@2.0.5: {}
+    - cache-push@2.1.0: {}
     envs:
     - opts:
         is_expand: false
