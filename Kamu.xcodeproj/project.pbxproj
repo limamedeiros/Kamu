@@ -44,10 +44,10 @@
 		268C55582240244E00AFDE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		268C555B2240244E00AFDE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		268C555D2240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		268C55622240244E00AFDE9C /* KamuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KamuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268C55622240244E00AFDE9C /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55662240244E00AFDE9C /* KamuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamuTests.swift; sourceTree = "<group>"; };
 		268C55682240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		268C556D2240244E00AFDE9C /* KamuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KamuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268C556D2240244E00AFDE9C /* UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55712240244E00AFDE9C /* KamuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamuUITests.swift; sourceTree = "<group>"; };
 		268C55732240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,8 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				268C55502240244B00AFDE9C /* Kamu */,
-				268C55652240244E00AFDE9C /* KamuTests */,
-				268C55702240244E00AFDE9C /* KamuUITests */,
+				268C55652240244E00AFDE9C /* Unit Tests */,
+				268C55702240244E00AFDE9C /* UI Tests */,
 				268C554F2240244B00AFDE9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				268C554E2240244B00AFDE9C /* Kamu.app */,
-				268C55622240244E00AFDE9C /* KamuTests.xctest */,
-				268C556D2240244E00AFDE9C /* KamuUITests.xctest */,
+				268C55622240244E00AFDE9C /* Unit Tests.xctest */,
+				268C556D2240244E00AFDE9C /* UI Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,22 +121,22 @@
 			path = Kamu;
 			sourceTree = "<group>";
 		};
-		268C55652240244E00AFDE9C /* KamuTests */ = {
+		268C55652240244E00AFDE9C /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
 				268C55662240244E00AFDE9C /* KamuTests.swift */,
 				268C55682240244E00AFDE9C /* Info.plist */,
 			);
-			path = KamuTests;
+			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
-		268C55702240244E00AFDE9C /* KamuUITests */ = {
+		268C55702240244E00AFDE9C /* UI Tests */ = {
 			isa = PBXGroup;
 			children = (
 				268C55712240244E00AFDE9C /* KamuUITests.swift */,
 				268C55732240244E00AFDE9C /* Info.plist */,
 			);
-			path = KamuUITests;
+			path = "UI Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +160,9 @@
 			productReference = 268C554E2240244B00AFDE9C /* Kamu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		268C55612240244E00AFDE9C /* KamuTests */ = {
+		268C55612240244E00AFDE9C /* Unit Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 268C55792240244E00AFDE9C /* Build configuration list for PBXNativeTarget "KamuTests" */;
+			buildConfigurationList = 268C55792240244E00AFDE9C /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
 				268C555E2240244E00AFDE9C /* Sources */,
 				268C555F2240244E00AFDE9C /* Frameworks */,
@@ -173,14 +173,14 @@
 			dependencies = (
 				268C55642240244E00AFDE9C /* PBXTargetDependency */,
 			);
-			name = KamuTests;
+			name = "Unit Tests";
 			productName = KamuTests;
-			productReference = 268C55622240244E00AFDE9C /* KamuTests.xctest */;
+			productReference = 268C55622240244E00AFDE9C /* Unit Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		268C556C2240244E00AFDE9C /* KamuUITests */ = {
+		268C556C2240244E00AFDE9C /* UI Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 268C557C2240244E00AFDE9C /* Build configuration list for PBXNativeTarget "KamuUITests" */;
+			buildConfigurationList = 268C557C2240244E00AFDE9C /* Build configuration list for PBXNativeTarget "UI Tests" */;
 			buildPhases = (
 				268C55692240244E00AFDE9C /* Sources */,
 				268C556A2240244E00AFDE9C /* Frameworks */,
@@ -191,9 +191,9 @@
 			dependencies = (
 				268C556F2240244E00AFDE9C /* PBXTargetDependency */,
 			);
-			name = KamuUITests;
+			name = "UI Tests";
 			productName = KamuUITests;
-			productReference = 268C556D2240244E00AFDE9C /* KamuUITests.xctest */;
+			productReference = 268C556D2240244E00AFDE9C /* UI Tests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -232,8 +232,8 @@
 			projectRoot = "";
 			targets = (
 				268C554D2240244B00AFDE9C /* Kamu */,
-				268C55612240244E00AFDE9C /* KamuTests */,
-				268C556C2240244E00AFDE9C /* KamuUITests */,
+				268C556C2240244E00AFDE9C /* UI Tests */,
+				268C55612240244E00AFDE9C /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -282,7 +282,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if [ -z \"$CI\" ]; then\n    swiftlint\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -508,7 +508,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = KamuTests/Info.plist;
+				INFOPLIST_FILE = "Unit Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,7 +529,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = KamuTests/Info.plist;
+				INFOPLIST_FILE = "Unit Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +549,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = KamuUITests/Info.plist;
+				INFOPLIST_FILE = "UI Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,7 +569,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMHV5Q69GD;
-				INFOPLIST_FILE = KamuUITests/Info.plist;
+				INFOPLIST_FILE = "UI Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		268C55792240244E00AFDE9C /* Build configuration list for PBXNativeTarget "KamuTests" */ = {
+		268C55792240244E00AFDE9C /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				268C557A2240244E00AFDE9C /* Debug */,
@@ -613,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		268C557C2240244E00AFDE9C /* Build configuration list for PBXNativeTarget "KamuUITests" */ = {
+		268C557C2240244E00AFDE9C /* Build configuration list for PBXNativeTarget "UI Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				268C557D2240244E00AFDE9C /* Debug */,

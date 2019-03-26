@@ -14,6 +14,34 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Release.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>UI Tests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Unit Tests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>268C554D2240244B00AFDE9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>268C55612240244E00AFDE9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
