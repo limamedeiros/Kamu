@@ -15,6 +15,8 @@
 		268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */; };
 		268C55672240244E00AFDE9C /* KamuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55662240244E00AFDE9C /* KamuTests.swift */; };
 		268C55722240244E00AFDE9C /* KamuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55712240244E00AFDE9C /* KamuUITests.swift */; };
+		26DFAA8F2252A470007E5109 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8D2252A46F007E5109 /* Quick.framework */; };
+		26DFAA902252A470007E5109 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8E2252A46F007E5109 /* Nimble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		268C556D2240244E00AFDE9C /* UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55712240244E00AFDE9C /* KamuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamuUITests.swift; sourceTree = "<group>"; };
 		268C55732240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26DFAA8D2252A46F007E5109 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		26DFAA8E2252A46F007E5109 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DFAA8F2252A470007E5109 /* Quick.framework in Frameworks */,
+				26DFAA902252A470007E5109 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,7 @@
 				268C55652240244E00AFDE9C /* Unit Tests */,
 				268C55702240244E00AFDE9C /* UI Tests */,
 				268C554F2240244B00AFDE9C /* Products */,
+				26DFAA8C2252A46F007E5109 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,15 @@
 				268C55732240244E00AFDE9C /* Info.plist */,
 			);
 			path = "UI Tests";
+			sourceTree = "<group>";
+		};
+		26DFAA8C2252A46F007E5109 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26DFAA8E2252A46F007E5109 /* Nimble.framework */,
+				26DFAA8D2252A46F007E5109 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +494,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHKSUBFK92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Kamu/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,6 +519,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHKSUBFK92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Kamu/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
