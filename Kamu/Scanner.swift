@@ -8,21 +8,19 @@
 import UIKit
 import AVFoundation
 
-class Scanner: NSObject, AVCaptureMetadataOutputObjectsDelegate {
-  private let viewController: UIViewController
+class Scanner: NSObject {
   private let outputHandler: (String) -> Void
 
-  init(viewController: UIViewController, outputHandler: @escaping (String) -> Void) {
-    self.viewController = viewController
+  init(view: UIView, outputHandler: @escaping (String) -> Void) {
     self.outputHandler = outputHandler
 
     super.init()
 
     if let captureSession = captureSession {
       let preview = AVCaptureVideoPreviewLayer(session: captureSession)
-      preview.frame = viewController.view.layer.bounds
+      preview.frame = view.layer.bounds
       preview.videoGravity = .resizeAspectFill
-      viewController.view.layer.addSublayer(preview)
+      view.layer.addSublayer(preview)
     }
   }
 
@@ -35,15 +33,14 @@ class Scanner: NSObject, AVCaptureMetadataOutputObjectsDelegate {
     let output = AVCaptureMetadataOutput()
     let session = AVCaptureSession()
 
-    guard session.canAddInput(input), session.canAddOutput(output),
-      let viewController = viewController as? AVCaptureMetadataOutputObjectsDelegate else {
+    guard session.canAddInput(input), session.canAddOutput(output) else {
       return nil
     }
 
     session.addInput(input)
     session.addOutput(output)
 
-    output.setMetadataObjectsDelegate(viewController, queue: DispatchQueue.main)
+    output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
     output.metadataObjectTypes = [.ean13, .ean8]
 
     return session
@@ -57,6 +54,10 @@ class Scanner: NSObject, AVCaptureMetadataOutputObjectsDelegate {
     captureSession?.startRunning()
   }
 
+}
+
+extension Scanner: AVCaptureMetadataOutputObjectsDelegate {
+
   func metadataOutput(_ output: AVCaptureMetadataOutput,
                       didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
     stop()
@@ -64,7 +65,7 @@ class Scanner: NSObject, AVCaptureMetadataOutputObjectsDelegate {
     guard let metadataObject = metadataObjects.first,
       let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject,
       let code = readableObject.stringValue else {
-      return
+        return
     }
     outputHandler(code)
   }

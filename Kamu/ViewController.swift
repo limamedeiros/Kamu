@@ -9,9 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  var scanner: Scanner!
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    self.scanner = Scanner(view: view, outputHandler: { code in print(code) })
+    self.scanner.start()
   }
 
 
