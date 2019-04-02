@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -169,6 +169,7 @@
 				268C554B2240244B00AFDE9C /* Frameworks */,
 				268C554C2240244B00AFDE9C /* Resources */,
 				268C557F22404EC200AFDE9C /* Lint */,
+				JPBX0BKZZNHI3GS983L3GY1N /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -305,6 +306,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ -z \"$CI\" ]; then\n    swiftlint\nfi\n";
+		};
+		JPBX0BKZZNHI3GS983L3GY1N /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/Kamu-inputPaths.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/Kamu-outputPaths.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
