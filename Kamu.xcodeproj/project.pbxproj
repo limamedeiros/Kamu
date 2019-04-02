@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,8 +15,8 @@
 		268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */; };
 		268C55672240244E00AFDE9C /* KamuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55662240244E00AFDE9C /* KamuTests.swift */; };
 		268C55722240244E00AFDE9C /* KamuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55712240244E00AFDE9C /* KamuUITests.swift */; };
-		26DFAA8F2252A470007E5109 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8D2252A46F007E5109 /* Quick.framework */; };
-		26DFAA902252A470007E5109 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8E2252A46F007E5109 /* Nimble.framework */; };
+		26DFAA9122539B10007E5109 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8E2252A46F007E5109 /* Nimble.framework */; };
+		26DFAA9222539B10007E5109 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8D2252A46F007E5109 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DFAA8F2252A470007E5109 /* Quick.framework in Frameworks */,
-				26DFAA902252A470007E5109 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DFAA9122539B10007E5109 /* Nimble.framework in Frameworks */,
+				26DFAA9222539B10007E5109 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +169,6 @@
 				268C554B2240244B00AFDE9C /* Frameworks */,
 				268C554C2240244B00AFDE9C /* Resources */,
 				268C557F22404EC200AFDE9C /* Lint */,
-				JPBX0BKZZNHI3GS983L3GY1N /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -306,27 +305,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ -z \"$CI\" ]; then\n    swiftlint\nfi\n";
-		};
-		JPBX0BKZZNHI3GS983L3GY1N /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/Kamu-inputPaths.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/Kamu-outputPaths.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -565,6 +543,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHKSUBFK92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Unit Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -586,6 +568,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHKSUBFK92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Unit Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
