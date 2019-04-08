@@ -1,12 +1,5 @@
-//
-//  Scanner.swift
-//  Kamu
-//
-//  Created by Vanessa Medeiros on 26/03/19.
-//
-
-import UIKit
 import AVFoundation
+import UIKit
 
 class Scanner: NSObject {
   private let outputHandler: (String) -> Void
@@ -53,21 +46,18 @@ class Scanner: NSObject {
   func start() {
     captureSession?.startRunning()
   }
-
 }
 
 extension Scanner: AVCaptureMetadataOutputObjectsDelegate {
-
-  func metadataOutput(_ output: AVCaptureMetadataOutput,
-                      didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+  func metadataOutput(_: AVCaptureMetadataOutput,
+                      didOutput metadataObjects: [AVMetadataObject], from _: AVCaptureConnection) {
     stop()
 
     guard let metadataObject = metadataObjects.first,
       let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject,
       let code = readableObject.stringValue else {
-        return
+      return
     }
     outputHandler(code)
   }
-
 }
