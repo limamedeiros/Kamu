@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2652225F225BD37E00DC3BE5 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2652225D225BD37E00DC3BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26522260225BD37E00DC3BE5 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2652225E225BD37E00DC3BE5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26634834224A9B0000EA2539 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26634833224A9B0000EA2539 /* Scanner.swift */; };
 		268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55512240244B00AFDE9C /* AppDelegate.swift */; };
 		268C55542240244B00AFDE9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55532240244B00AFDE9C /* ViewController.swift */; };
@@ -36,7 +38,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2652225C225BD35100DC3BE5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2652225F225BD37E00DC3BE5 /* Quick.framework in CopyFiles */,
+				26522260225BD37E00DC3BE5 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2652225D225BD37E00DC3BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		2652225E225BD37E00DC3BE5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		26634833224A9B0000EA2539 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		2683554E2242848400F6E670 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2683554F2242849900F6E670 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -100,6 +118,8 @@
 		268C55452240244B00AFDE9C = {
 			isa = PBXGroup;
 			children = (
+				2652225E225BD37E00DC3BE5 /* Nimble.framework */,
+				2652225D225BD37E00DC3BE5 /* Quick.framework */,
 				268C55502240244B00AFDE9C /* Kamu */,
 				268C55652240244E00AFDE9C /* Unit Tests */,
 				268C55702240244E00AFDE9C /* UI Tests */,
@@ -185,6 +205,7 @@
 			buildPhases = (
 				268C555E2240244E00AFDE9C /* Sources */,
 				268C555F2240244E00AFDE9C /* Frameworks */,
+				2652225C225BD35100DC3BE5 /* CopyFiles */,
 				268C55602240244E00AFDE9C /* Resources */,
 			);
 			buildRules = (
