@@ -1,63 +1,39 @@
-import AVFoundation
 import UIKit
 
 class Scanner: NSObject {
-  private let outputHandler: (String) -> Void
+  private let capture: Capture
+  private let completion: (Result<String, Error>) -> Void
 
-  init(view: UIView, outputHandler: @escaping (String) -> Void) {
-    self.outputHandler = outputHandler
-
-    super.init()
-
-    if let captureSession = captureSession {
-      let preview = AVCaptureVideoPreviewLayer(session: captureSession)
-      preview.frame = view.layer.bounds
-      preview.videoGravity = .resizeAspectFill
-      view.layer.addSublayer(preview)
-    }
+  enum Error: Swift.Error {
+    case configuration
   }
 
-  private lazy var captureSession: AVCaptureSession? = {
-    guard let device = AVCaptureDevice.default(for: .video),
-      let input = try? AVCaptureDeviceInput(device: device) else {
-      return nil
-    }
+  init(view: UIView, capture: Capture = Capture(), completion: @escaping (Result<String, Error>) -> Void) {
+    self.capture = capture
+    self.completion = completion
+    super.init()
 
-    let output = AVCaptureMetadataOutput()
-    let session = AVCaptureSession()
+    capture.delegate = self
 
-    guard session.canAddInput(input), session.canAddOutput(output) else {
-      return nil
-    }
-
-    session.addInput(input)
-    session.addOutput(output)
-
-    output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-    output.metadataObjectTypes = [.ean13, .ean8]
-
-    return session
-  }()
-
-  func stop() {
-    captureSession?.stopRunning()
+    let preview = capture.preview
+    preview.frame = view.layer.bounds
+    view.layer.addSublayer(preview)
   }
 
   func start() {
-    captureSession?.startRunning()
+    capture.start()
   }
 }
 
-extension Scanner: AVCaptureMetadataOutputObjectsDelegate {
-  func metadataOutput(_: AVCaptureMetadataOutput,
-                      didOutput metadataObjects: [AVMetadataObject], from _: AVCaptureConnection) {
-    stop()
-
-    guard let metadataObject = metadataObjects.first,
-      let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject,
-      let code = readableObject.stringValue else {
-      return
+extension Scanner: Scannable {
+  func didFail(with failure: Capture.Error) {
+    switch failure {
+    case .device, .input, .output:
+      completion(.failure(.configuration))
     }
-    outputHandler(code)
+  }
+
+  func didRead(code: String) {
+    completion(.success(code))
   }
 }

@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		2652225F225BD37E00DC3BE5 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2652225D225BD37E00DC3BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26522260225BD37E00DC3BE5 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2652225E225BD37E00DC3BE5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26522262225BDCFC00DC3BE5 /* ScannerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522261225BDCFC00DC3BE5 /* ScannerSpec.swift */; };
+		26522264225C130200DC3BE5 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522263225C130200DC3BE5 /* Capture.swift */; };
 		26634834224A9B0000EA2539 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26634833224A9B0000EA2539 /* Scanner.swift */; };
 		268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55512240244B00AFDE9C /* AppDelegate.swift */; };
 		268C55542240244B00AFDE9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55532240244B00AFDE9C /* ViewController.swift */; };
 		268C55592240244E00AFDE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268C55582240244E00AFDE9C /* Assets.xcassets */; };
 		268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */; };
-		268C55672240244E00AFDE9C /* KamuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55662240244E00AFDE9C /* KamuTests.swift */; };
 		268C55722240244E00AFDE9C /* KamuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55712240244E00AFDE9C /* KamuUITests.swift */; };
 		26DFAA9122539B10007E5109 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8E2252A46F007E5109 /* Nimble.framework */; };
 		26DFAA9222539B10007E5109 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8D2252A46F007E5109 /* Quick.framework */; };
@@ -54,6 +55,8 @@
 /* Begin PBXFileReference section */
 		2652225D225BD37E00DC3BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		2652225E225BD37E00DC3BE5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		26522261225BDCFC00DC3BE5 /* ScannerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerSpec.swift; sourceTree = "<group>"; };
+		26522263225C130200DC3BE5 /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
 		26634833224A9B0000EA2539 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		2683554E2242848400F6E670 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2683554F2242849900F6E670 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -65,7 +68,6 @@
 		268C555B2240244E00AFDE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		268C555D2240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268C55622240244E00AFDE9C /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		268C55662240244E00AFDE9C /* KamuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamuTests.swift; sourceTree = "<group>"; };
 		268C55682240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268C556D2240244E00AFDE9C /* UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55712240244E00AFDE9C /* KamuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamuUITests.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				268C55512240244B00AFDE9C /* AppDelegate.swift */,
 				268C55532240244B00AFDE9C /* ViewController.swift */,
 				26634833224A9B0000EA2539 /* Scanner.swift */,
+				26522263225C130200DC3BE5 /* Capture.swift */,
 				268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */,
 				268355512242A66200F6E670 /* Supporting Files */,
 			);
@@ -151,7 +154,7 @@
 		268C55652240244E00AFDE9C /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
-				268C55662240244E00AFDE9C /* KamuTests.swift */,
+				26522261225BDCFC00DC3BE5 /* ScannerSpec.swift */,
 				268C55682240244E00AFDE9C /* Info.plist */,
 			);
 			path = "Unit Tests";
@@ -330,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26522264225C130200DC3BE5 /* Capture.swift in Sources */,
 				268C55542240244B00AFDE9C /* ViewController.swift in Sources */,
 				26634834224A9B0000EA2539 /* Scanner.swift in Sources */,
 				268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */,
@@ -340,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				268C55672240244E00AFDE9C /* KamuTests.swift in Sources */,
+				26522262225BDCFC00DC3BE5 /* ScannerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YMHV5Q69GD;
+				DEVELOPMENT_TEAM = WHKSUBFK92;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -512,7 +516,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.limamedeiros.test.release;
+				PRODUCT_BUNDLE_IDENTIFIER = com.limamedeiros.kamu.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -527,7 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YMHV5Q69GD;
+				DEVELOPMENT_TEAM = WHKSUBFK92;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -537,7 +541,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.limamedeiros.test.release;
+				PRODUCT_BUNDLE_IDENTIFIER = com.limamedeiros.kamu.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
