@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		268C55592240244E00AFDE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268C55582240244E00AFDE9C /* Assets.xcassets */; };
 		268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */; };
 		268C55722240244E00AFDE9C /* KamuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55712240244E00AFDE9C /* KamuUITests.swift */; };
+		26C5031A225CE3CD00D92090 /* Cuckoo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26C50319225CE3CD00D92090 /* Cuckoo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26C5031B225CE3DB00D92090 /* Cuckoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C50319225CE3CD00D92090 /* Cuckoo.framework */; };
+		26C5031E225CE6A300D92090 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C5031D225CE6A300D92090 /* GeneratedMocks.swift */; };
 		26DFAA9122539B10007E5109 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8E2252A46F007E5109 /* Nimble.framework */; };
 		26DFAA9222539B10007E5109 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DFAA8D2252A46F007E5109 /* Quick.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,7 @@
 			files = (
 				2652225F225BD37E00DC3BE5 /* Quick.framework in CopyFiles */,
 				26522260225BD37E00DC3BE5 /* Nimble.framework in CopyFiles */,
+				26C5031A225CE3CD00D92090 /* Cuckoo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +76,8 @@
 		268C556D2240244E00AFDE9C /* UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55712240244E00AFDE9C /* KamuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamuUITests.swift; sourceTree = "<group>"; };
 		268C55732240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26C50319225CE3CD00D92090 /* Cuckoo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cuckoo.framework; path = Carthage/Build/iOS/Cuckoo.framework; sourceTree = "<group>"; };
+		26C5031D225CE6A300D92090 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		26DFAA8D2252A46F007E5109 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		26DFAA8E2252A46F007E5109 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +96,7 @@
 			files = (
 				26DFAA9122539B10007E5109 /* Nimble.framework in Frameworks */,
 				26DFAA9222539B10007E5109 /* Quick.framework in Frameworks */,
+				26C5031B225CE3DB00D92090 /* Cuckoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +125,7 @@
 		268C55452240244B00AFDE9C = {
 			isa = PBXGroup;
 			children = (
+				26C50319225CE3CD00D92090 /* Cuckoo.framework */,
 				2652225E225BD37E00DC3BE5 /* Nimble.framework */,
 				2652225D225BD37E00DC3BE5 /* Quick.framework */,
 				268C55502240244B00AFDE9C /* Kamu */,
@@ -154,6 +162,7 @@
 		268C55652240244E00AFDE9C /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
+				26C50320225CE6B400D92090 /* Mocks */,
 				26522261225BDCFC00DC3BE5 /* ScannerSpec.swift */,
 				268C55682240244E00AFDE9C /* Info.plist */,
 			);
@@ -167,6 +176,14 @@
 				268C55732240244E00AFDE9C /* Info.plist */,
 			);
 			path = "UI Tests";
+			sourceTree = "<group>";
+		};
+		26C50320225CE6B400D92090 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				26C5031D225CE6A300D92090 /* GeneratedMocks.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		26DFAA8C2252A46F007E5109 /* Frameworks */ = {
@@ -189,6 +206,7 @@
 				268C554B2240244B00AFDE9C /* Frameworks */,
 				268C554C2240244B00AFDE9C /* Resources */,
 				268C557F22404EC200AFDE9C /* Lint */,
+				4RJCCA56X92CTOVUGZQG8NXX /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -203,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 268C55792240244E00AFDE9C /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
+				26C5031C225CE3E100D92090 /* Cuckoo */,
 				268C555E2240244E00AFDE9C /* Sources */,
 				268C555F2240244E00AFDE9C /* Frameworks */,
 				2652225C225BD35100DC3BE5 /* CopyFiles */,
@@ -326,6 +345,45 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ -z \"$CI\" ]; then\n    swiftlint\nfi\n";
 		};
+		26C5031C225CE3E100D92090 /* Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Cuckoo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export GITHUB_ACCESS_TOKEN=\"8381f59ed986fa8475798637dc74abc75dd71646\"\n# Ty# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/Unit Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"Carthage/Checkouts/Cuckoo/run\" --download 0.12.0 generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Capture.swift\" \\pe a script or drag a script file from your workspace to insert its path.\n";
+		};
+		4RJCCA56X92CTOVUGZQG8NXX /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/Kamu-inputPaths.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/Kamu-outputPaths.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -345,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26522262225BDCFC00DC3BE5 /* ScannerSpec.swift in Sources */,
+				26C5031E225CE6A300D92090 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

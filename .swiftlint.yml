@@ -1,2 +1,4 @@
 excluded:
     - Carthage
+    - Unit Tests/Mocks
+    - GeneratedMocks.swift
