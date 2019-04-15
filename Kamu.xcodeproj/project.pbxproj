@@ -353,15 +353,17 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(PROJECT_DIR)/Kamu/Capture.swift",
 			);
 			name = Cuckoo;
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(PROJECT_DIR)/Unit Tests/Mocks/GeneratedMocks.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "OUTPUT_FILE=\"${PROJECT_DIR}/Unit Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n\"Carthage/Checkouts/Cuckoo/run\" --download 0.12.1 generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Capture.swift\"\n";
+			shellScript = "OUTPUT_FILE=\"${PROJECT_DIR}/Unit Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n\"Carthage/Checkouts/Cuckoo/run\" --download 0.12.1 generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\"\n";
 		};
 		4RJCCA56X92CTOVUGZQG8NXX /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
