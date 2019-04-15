@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Kamu/Capture.swift at 2019-04-15 18:46:01 +0000
+// MARK: - Mocks generated from file: Kamu/Capture.swift at 2019-04-15 21:12:13 +0000
 
 
 import Cuckoo

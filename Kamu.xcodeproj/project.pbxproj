@@ -363,7 +363,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "OUTPUT_FILE=\"${PROJECT_DIR}/Unit Tests/Mocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n\"Carthage/Checkouts/Cuckoo/run\" --download 0.12.1 generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\"\n";
+			shellScript = "if [! -z \"$CI\" ]; then\n    OUTPUT_FILE=\"${PROJECT_DIR}/Unit Tests/Mocks/GeneratedMocks.swift\"\n    echo \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n    INPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\n    echo \"Mocks Input Directory = ${INPUT_DIR}\"\n\n    \"Carthage/Checkouts/Cuckoo/run\" --download 0.12.1 generate --testable \"${PROJECT_NAME}\" \\\n    --output \"${OUTPUT_FILE}\"\nfi\n";
 		};
 		4RJCCA56X92CTOVUGZQG8NXX /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
