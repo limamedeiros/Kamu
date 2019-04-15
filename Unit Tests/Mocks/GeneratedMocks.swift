@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Kamu/Capture.swift at 2019-04-09 20:57:41 +0000
+// MARK: - Mocks generated from file: Kamu/Capture.swift at 2019-04-15 18:46:01 +0000
 
 
 import Cuckoo
@@ -6,20 +6,22 @@ import Cuckoo
 
 import AVFoundation
 
-class MockCapture: Capture, Cuckoo.ClassMock {
-    typealias MocksType = Capture
-    typealias Stubbing = __StubbingProxy_Capture
-    typealias Verification = __VerificationProxy_Capture
+
+ class MockCapture: Capture, Cuckoo.ClassMock {
+     typealias MocksType = Capture
+     typealias Stubbing = __StubbingProxy_Capture
+     typealias Verification = __VerificationProxy_Capture
 
     private var __defaultImplStub: Capture?
 
-    let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: true)
+     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: true)
 
-    func enableDefaultImplementation(_ stub: Capture) {
+     func enableDefaultImplementation(_ stub: Capture) {
         __defaultImplStub = stub
         cuckoo_manager.enableDefaultStubImplementation()
     }
 
+    
     
     
     public override var delegate: Scannable? {
@@ -43,6 +45,7 @@ class MockCapture: Capture, Cuckoo.ClassMock {
         }
         
     }
+    
     
     
     public override var preview: CALayer {
@@ -71,7 +74,8 @@ class MockCapture: Capture, Cuckoo.ClassMock {
     
 
     
-    // ["name": "start", "returnSignature": "", "fullyQualifiedName": "start()", "parameterSignature": "", "parameterSignatureWithoutNames": "", "inputTypes": "", "isThrowing": false, "isInit": false, "isOverriding": true, "hasClosureParams": false, "@type": "ClassMethod", "accessibility": "", "parameterNames": "", "call": "", "parameters": [], "returnType": "Void", "isOptional": false, "escapingParameterNames": "", "stubFunction": "Cuckoo.ClassStubNoReturnFunction"]
+    
+    
      override func start()  {
         
             return cuckoo_manager.call("start()",
@@ -85,7 +89,8 @@ class MockCapture: Capture, Cuckoo.ClassMock {
         
     }
     
-    // ["name": "configure", "returnSignature": "", "fullyQualifiedName": "configure()", "parameterSignature": "", "parameterSignatureWithoutNames": "", "inputTypes": "", "isThrowing": false, "isInit": false, "isOverriding": true, "hasClosureParams": false, "@type": "ClassMethod", "accessibility": "", "parameterNames": "", "call": "", "parameters": [], "returnType": "Void", "isOptional": false, "escapingParameterNames": "", "stubFunction": "Cuckoo.ClassStubNoReturnFunction"]
+    
+    
      override func configure()  {
         
             return cuckoo_manager.call("configure()",
@@ -100,10 +105,10 @@ class MockCapture: Capture, Cuckoo.ClassMock {
     }
     
 
-	struct __StubbingProxy_Capture: Cuckoo.StubbingProxy {
+	 struct __StubbingProxy_Capture: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
 	
-	    init(manager: Cuckoo.MockManager) {
+	     init(manager: Cuckoo.MockManager) {
 	        self.cuckoo_manager = manager
 	    }
 	    
@@ -128,12 +133,12 @@ class MockCapture: Capture, Cuckoo.ClassMock {
 	    
 	}
 
-	struct __VerificationProxy_Capture: Cuckoo.VerificationProxy {
+	 struct __VerificationProxy_Capture: Cuckoo.VerificationProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
 	    private let callMatcher: Cuckoo.CallMatcher
 	    private let sourceLocation: Cuckoo.SourceLocation
 	
-	    init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
 	        self.cuckoo_manager = manager
 	        self.callMatcher = callMatcher
 	        self.sourceLocation = sourceLocation
@@ -201,16 +206,17 @@ class MockCapture: Capture, Cuckoo.ClassMock {
 }
 
 
-class MockScannable: Scannable, Cuckoo.ProtocolMock {
-    typealias MocksType = Scannable
-    typealias Stubbing = __StubbingProxy_Scannable
-    typealias Verification = __VerificationProxy_Scannable
+
+ class MockScannable: Scannable, Cuckoo.ProtocolMock {
+     typealias MocksType = Scannable
+     typealias Stubbing = __StubbingProxy_Scannable
+     typealias Verification = __VerificationProxy_Scannable
 
     private var __defaultImplStub: Scannable?
 
-    let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
+     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
 
-    func enableDefaultImplementation(_ stub: Scannable) {
+     func enableDefaultImplementation(_ stub: Scannable) {
         __defaultImplStub = stub
         cuckoo_manager.enableDefaultStubImplementation()
     }
@@ -220,7 +226,8 @@ class MockScannable: Scannable, Cuckoo.ProtocolMock {
     
 
     
-    // ["name": "didFail", "returnSignature": "", "fullyQualifiedName": "didFail(with: Capture.Error)", "parameterSignature": "with failure: Capture.Error", "parameterSignatureWithoutNames": "failure: Capture.Error", "inputTypes": "Capture.Error", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": false, "@type": "ProtocolMethod", "accessibility": "", "parameterNames": "failure", "call": "with: failure", "parameters": [CuckooGeneratorFramework.MethodParameter(label: Optional("with"), name: "failure", type: "Capture.Error", range: CountableRange(2180..<2207), nameRange: CountableRange(2180..<2184))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "failure", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
+    
+    
      func didFail(with failure: Capture.Error)  {
         
             return cuckoo_manager.call("didFail(with: Capture.Error)",
@@ -234,7 +241,8 @@ class MockScannable: Scannable, Cuckoo.ProtocolMock {
         
     }
     
-    // ["name": "didRead", "returnSignature": "", "fullyQualifiedName": "didRead(code: String)", "parameterSignature": "code: String", "parameterSignatureWithoutNames": "code: String", "inputTypes": "String", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": false, "@type": "ProtocolMethod", "accessibility": "", "parameterNames": "code", "call": "code: code", "parameters": [CuckooGeneratorFramework.MethodParameter(label: Optional("code"), name: "code", type: "String", range: CountableRange(2224..<2236), nameRange: CountableRange(2224..<2228))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "code", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
+    
+    
      func didRead(code: String)  {
         
             return cuckoo_manager.call("didRead(code: String)",
@@ -249,10 +257,10 @@ class MockScannable: Scannable, Cuckoo.ProtocolMock {
     }
     
 
-	struct __StubbingProxy_Scannable: Cuckoo.StubbingProxy {
+	 struct __StubbingProxy_Scannable: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
 	
-	    init(manager: Cuckoo.MockManager) {
+	     init(manager: Cuckoo.MockManager) {
 	        self.cuckoo_manager = manager
 	    }
 	    
@@ -269,12 +277,12 @@ class MockScannable: Scannable, Cuckoo.ProtocolMock {
 	    
 	}
 
-	struct __VerificationProxy_Scannable: Cuckoo.VerificationProxy {
+	 struct __VerificationProxy_Scannable: Cuckoo.VerificationProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
 	    private let callMatcher: Cuckoo.CallMatcher
 	    private let sourceLocation: Cuckoo.SourceLocation
 	
-	    init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
 	        self.cuckoo_manager = manager
 	        self.callMatcher = callMatcher
 	        self.sourceLocation = sourceLocation
