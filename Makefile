@@ -16,5 +16,8 @@ check:
 code-format:
 	swiftformat .
 
+dependencies:
+	carthage update --no-use-binaries --platform iOS
+
 unit-tests:
 	bitrise run unit-tests
