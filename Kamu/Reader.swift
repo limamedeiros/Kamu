@@ -1,6 +1,6 @@
 import UIKit
 
-class Scanner: NSObject {
+class Reader: NSObject {
   private let capture: Capture
   private let completion: (Result<String, Error>) -> Void
 
@@ -25,7 +25,7 @@ class Scanner: NSObject {
   }
 }
 
-extension Scanner: Scannable {
+extension Reader: Scannable {
   func didFail(with failure: Capture.Error) {
     switch failure {
     case .device, .input, .output:
