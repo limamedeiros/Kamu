@@ -1,0 +1,67 @@
+{
+    "count": 435,
+    "next": "https://kamu.thoughtworks-labs.net/api/libraries/poa/books/?page=2",
+    "previous": null,
+    "results": [
+        {
+            "id": 683,
+            "copies": [
+                {
+                    "id": 800,
+                    "user": null,
+                    "borrow_date": null
+                }
+            ],
+            "waitlist_users": [],
+            "author": "Editora Abril",
+            "title": "A bíblia do Office 2010",
+            "subtitle": null,
+            "description": null,
+            "image_url": "https://skoob.s3.amazonaws.com/livros/236307/A_BIBLIA_DO_OFFICE_2010_1335714101B.jpg",
+            "isbn": null,
+            "number_of_pages": null,
+            "publication_date": "1973-04-21",
+            "publisher": "Editora Abril"
+        },
+        {
+            "id": 730,
+            "copies": [
+                {
+                    "id": 850,
+                    "user": null,
+                    "borrow_date": null
+                }
+            ],
+            "waitlist_users": [],
+            "author": "Sam Welman",
+            "title": "Abraham Lincoln",
+            "subtitle": null,
+            "description": null,
+            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51H5QWC99GL.SX363_BO1,204,203,200.jpg",
+            "isbn": null,
+            "number_of_pages": 224,
+            "publication_date": "1985-04-21",
+            "publisher": null
+        },
+        {
+            "id": 253,
+            "copies": [
+                {
+                    "id": 821,
+                    "user": null,
+                    "borrow_date": null
+                }
+            ],
+            "waitlist_users": [],
+            "author": "Leander Kahney",
+            "title": "A Cabeça de Steves Jobs",
+            "subtitle": null,
+            "description": "Neste livro, que pretende ser uma biografia sobre Steve Jobs e, ao mesmo tempo, um guia sobre liderança, o autor busca mostrar os princípios que guiaram Jobs ao lançar produtos, ao atrair compradores e ao administrar a sua empresa.",
+            "image_url": "http://books.google.com.br/books/content?id=70vqOv05j30C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "isbn": "9788522009770",
+            "number_of_pages": 263,
+            "publication_date": "2008-04-21",
+            "publisher": "Agir Editora"
+        }
+    ]
+}

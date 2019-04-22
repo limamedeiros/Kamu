@@ -29,7 +29,16 @@ extension Kamu: TargetType {
   }
 
   var sampleData: Data {
-    return Data()
+    switch self {
+    case .books:
+      guard let url = Bundle.main.url(forResource: "books", withExtension: "json"),
+        let data = try? Data(contentsOf: url) else {
+          return Data()
+      }
+      return data
+    case .borrow:
+      return Data()
+    }
   }
 
   var task: Task {
@@ -42,4 +51,14 @@ extension Kamu: TargetType {
   var headers: [String: String]? {
     return ["Content-type": "application/json"]
   }
+}
+
+extension Bundle {
+
+  // swiftlint:disable force_cast
+  static var test: Bundle? {
+    return Bundle(identifier: "com.limamedeiros.KamuUITests")
+  }
+  // swiftlint:enable force_cast
+
 }

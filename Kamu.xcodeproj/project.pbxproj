@@ -19,6 +19,8 @@
 		2676C5A12267A749002D9B08 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A02267A749002D9B08 /* Network.swift */; };
 		2676C5A32267AD22002D9B08 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A22267AD22002D9B08 /* Book.swift */; };
 		268C08D3226E47CF0025E559 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D2226E47CF0025E559 /* Response.swift */; };
+		268C08DA226E4C8F0025E559 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D9226E4C8F0025E559 /* NetworkSpec.swift */; };
+		268C08DB226E76DC0025E559 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 268C08D7226E4C0E0025E559 /* books.json */; };
 		268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55512240244B00AFDE9C /* AppDelegate.swift */; };
 		268C55542240244B00AFDE9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55532240244B00AFDE9C /* ViewController.swift */; };
 		268C55592240244E00AFDE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268C55582240244E00AFDE9C /* Assets.xcassets */; };
@@ -79,6 +81,8 @@
 		2683554F2242849900F6E670 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		26835550224284BE00F6E670 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		268C08D2226E47CF0025E559 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		268C08D7226E4C0E0025E559 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
+		268C08D9226E4C8F0025E559 /* NetworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpec.swift; sourceTree = "<group>"; };
 		268C554E2240244B00AFDE9C /* Kamu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55512240244B00AFDE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		268C55532240244B00AFDE9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,14 @@
 			path = Reader;
 			sourceTree = "<group>";
 		};
+		268C08DC226E77C00025E559 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				268C08D7226E4C0E0025E559 /* books.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		268C55452240244B00AFDE9C = {
 			isa = PBXGroup;
 			children = (
@@ -208,7 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				26C50320225CE6B400D92090 /* Mocks */,
+				268C08DC226E77C00025E559 /* Stubs */,
 				26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */,
+				268C08D9226E4C8F0025E559 /* NetworkSpec.swift */,
 				268C55682240244E00AFDE9C /* Info.plist */,
 			);
 			path = "Unit Tests";
@@ -354,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268C08DB226E76DC0025E559 /* books.json in Resources */,
 				268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */,
 				268C55592240244E00AFDE9C /* Assets.xcassets in Resources */,
 			);
@@ -478,6 +493,7 @@
 			files = (
 				26522262225BDCFC00DC3BE5 /* ReaderSpec.swift in Sources */,
 				26C5031E225CE6A300D92090 /* GeneratedMocks.swift in Sources */,
+				268C08DA226E4C8F0025E559 /* NetworkSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

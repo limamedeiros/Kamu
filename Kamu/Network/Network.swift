@@ -1,21 +1,13 @@
-//
-//  Network.swift
-//  Kamu
-//
-//  Created by Vanessa Medeiros on 17/04/19.
-//
-
 import Moya
 
 class Network {
-
   let provider: MoyaProvider<Kamu>
 
   init(provider: MoyaProvider<Kamu> = MoyaProvider<Kamu>()) {
     self.provider = provider
   }
 
-  func request<T: Decodable>(_ type: T.Type, target: Kamu, completion: @escaping (Result<T, Error>) -> Void) {
+  func request<T: Decodable>(_: T.Type, target: Kamu, completion: @escaping (Result<T, Error>) -> Void) {
     provider.request(target) { result in
       switch result {
       case let .success(response):
@@ -30,11 +22,9 @@ class Network {
       }
     }
   }
-
 }
 
 extension Network {
-
   func books(_ completion: @escaping (Result<[Book], Error>) -> Void) {
     request(Response.self, target: .books) { result in
       switch result {
@@ -45,6 +35,4 @@ extension Network {
       }
     }
   }
-
 }
-
