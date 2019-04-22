@@ -16,6 +16,9 @@
 		26522262225BDCFC00DC3BE5 /* ReaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */; };
 		26522264225C130200DC3BE5 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522263225C130200DC3BE5 /* Capture.swift */; };
 		26634834224A9B0000EA2539 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26634833224A9B0000EA2539 /* Reader.swift */; };
+		2676C5A12267A749002D9B08 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A02267A749002D9B08 /* Network.swift */; };
+		2676C5A32267AD22002D9B08 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A22267AD22002D9B08 /* Book.swift */; };
+		268C08D3226E47CF0025E559 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D2226E47CF0025E559 /* Response.swift */; };
 		268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55512240244B00AFDE9C /* AppDelegate.swift */; };
 		268C55542240244B00AFDE9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55532240244B00AFDE9C /* ViewController.swift */; };
 		268C55592240244E00AFDE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268C55582240244E00AFDE9C /* Assets.xcassets */; };
@@ -70,9 +73,12 @@
 		26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderSpec.swift; sourceTree = "<group>"; };
 		26522263225C130200DC3BE5 /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
 		26634833224A9B0000EA2539 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		2676C5A02267A749002D9B08 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		2676C5A22267AD22002D9B08 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		2683554E2242848400F6E670 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2683554F2242849900F6E670 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		26835550224284BE00F6E670 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		268C08D2226E47CF0025E559 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		268C554E2240244B00AFDE9C /* Kamu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55512240244B00AFDE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		268C55532240244B00AFDE9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,33 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		268C08D4226E47DC0025E559 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2676C5A22267AD22002D9B08 /* Book.swift */,
+				268C08D2226E47CF0025E559 /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		268C08D5226E47E80025E559 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2676C5A02267A749002D9B08 /* Network.swift */,
+				263C5A97226787D300DD908F /* Kamu.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		268C08D6226E47F40025E559 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				26522263225C130200DC3BE5 /* Capture.swift */,
+				26634833224A9B0000EA2539 /* Reader.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
 		268C55452240244B00AFDE9C = {
 			isa = PBXGroup;
 			children = (
@@ -162,9 +195,9 @@
 			children = (
 				268C55512240244B00AFDE9C /* AppDelegate.swift */,
 				268C55532240244B00AFDE9C /* ViewController.swift */,
-				263C5A97226787D300DD908F /* Kamu.swift */,
-				26634833224A9B0000EA2539 /* Reader.swift */,
-				26522263225C130200DC3BE5 /* Capture.swift */,
+				268C08D4226E47DC0025E559 /* Models */,
+				268C08D5226E47E80025E559 /* Network */,
+				268C08D6226E47F40025E559 /* Reader */,
 				268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */,
 				268355512242A66200F6E670 /* Supporting Files */,
 			);
@@ -351,6 +384,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
 			);
 			name = "App Transport Security";
 			outputFileListPaths = (
@@ -427,8 +461,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268C08D3226E47CF0025E559 /* Response.swift in Sources */,
 				26522264225C130200DC3BE5 /* Capture.swift in Sources */,
 				268C55542240244B00AFDE9C /* ViewController.swift in Sources */,
+				2676C5A32267AD22002D9B08 /* Book.swift in Sources */,
+				2676C5A12267A749002D9B08 /* Network.swift in Sources */,
 				26634834224A9B0000EA2539 /* Reader.swift in Sources */,
 				263C5A98226787D300DD908F /* Kamu.swift in Sources */,
 				268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */,

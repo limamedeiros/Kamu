@@ -7,7 +7,7 @@ enum Kamu {
 
 extension Kamu: TargetType {
   var baseURL: URL {
-    return URL(string: "http://localhost:9797/")!
+    return URL(string: "http://localhost:9797")!
   }
 
   var path: String {

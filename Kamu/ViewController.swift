@@ -1,4 +1,3 @@
-import Moya
 import UIKit
 
 class ViewController: UIViewController {
@@ -7,8 +6,9 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let provider = MoyaProvider<Kamu>()
-    provider.request(.books) { result in
+    let network = Network()
+
+    network.books { result in
       switch result {
       case let .success(books):
         dump(books)
