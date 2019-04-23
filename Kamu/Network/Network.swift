@@ -7,25 +7,22 @@ class Network {
     self.provider = provider
   }
 
-  func request<T: Decodable>(_: T.Type, target: Kamu, completion: @escaping (Result<T, Error>) -> Void) {
+  func request<T: Decodable>(_: T.Type, target: Kamu, completion: @escaping Completion<T>) {
     provider.request(target) { result in
-      switch result {
-      case let .success(response):
-        do {
-          _ = try response.filterSuccessfulStatusCodes()
-          completion(.success(try response.map(T.self)))
-        } catch {
-          completion(.failure(error))
-        }
-      case let .failure(error):
+      do {
+        let response = try result.get()
+        _ = try response.filterSuccessfulStatusCodes()
+        completion(.success(try response.map(T.self)))
+      } catch {
         completion(.failure(error))
       }
     }
   }
 }
 
+#warning("TODO: Refactor switch")
 extension Network {
-  func books(_ completion: @escaping (Result<[Book], Error>) -> Void) {
+  func books(_ completion: @escaping Completion<[Book]>) {
     request(Response.self, target: .books) { result in
       switch result {
       case let .success(response):

@@ -33,7 +33,7 @@ extension Kamu: TargetType {
     case .books:
       guard let url = Bundle.main.url(forResource: "books", withExtension: "json"),
         let data = try? Data(contentsOf: url) else {
-          return Data()
+        return Data()
       }
       return data
     case .borrow:

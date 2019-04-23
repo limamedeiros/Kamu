@@ -1,5 +1,5 @@
-import Moya
 @testable import Kamu
+import Moya
 
 import Cuckoo
 import Nimble
@@ -7,7 +7,6 @@ import Quick
 
 class NetworkSpec: QuickSpec {
   override func spec() {
-
     var sut: Network!
 
     describe("Network") {
@@ -31,9 +30,6 @@ class NetworkSpec: QuickSpec {
           }
         }
       }
-
     }
-
-
   }
 }
