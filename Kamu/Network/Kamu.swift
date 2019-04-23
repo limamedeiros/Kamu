@@ -7,7 +7,7 @@ enum Kamu {
 
 extension Kamu: TargetType {
   var baseURL: URL {
-    return URL(string: "http://localhost:9797")!
+    return Configuration.url
   }
 
   var path: String {
@@ -51,14 +51,4 @@ extension Kamu: TargetType {
   var headers: [String: String]? {
     return ["Content-type": "application/json"]
   }
-}
-
-extension Bundle {
-
-  // swiftlint:disable force_cast
-  static var test: Bundle? {
-    return Bundle(identifier: "com.limamedeiros.KamuUITests")
-  }
-  // swiftlint:enable force_cast
-
 }

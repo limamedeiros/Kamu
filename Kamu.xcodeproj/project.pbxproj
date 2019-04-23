@@ -21,6 +21,7 @@
 		268C08D3226E47CF0025E559 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D2226E47CF0025E559 /* Response.swift */; };
 		268C08DA226E4C8F0025E559 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D9226E4C8F0025E559 /* NetworkSpec.swift */; };
 		268C08DB226E76DC0025E559 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 268C08D7226E4C0E0025E559 /* books.json */; };
+		268C08DF226F4FF10025E559 /* Configuration.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08DE226F4FF10025E559 /* Configuration.generated.swift */; };
 		268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55512240244B00AFDE9C /* AppDelegate.swift */; };
 		268C55542240244B00AFDE9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55532240244B00AFDE9C /* ViewController.swift */; };
 		268C55592240244E00AFDE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268C55582240244E00AFDE9C /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		268C08D2226E47CF0025E559 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		268C08D7226E4C0E0025E559 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		268C08D9226E4C8F0025E559 /* NetworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpec.swift; sourceTree = "<group>"; };
+		268C08DE226F4FF10025E559 /* Configuration.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.generated.swift; sourceTree = "<group>"; };
 		268C554E2240244B00AFDE9C /* Kamu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55512240244B00AFDE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		268C55532240244B00AFDE9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		268355512242A66200F6E670 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				268C08DE226F4FF10025E559 /* Configuration.generated.swift */,
 				268C555D2240244E00AFDE9C /* Info.plist */,
 				268C55582240244E00AFDE9C /* Assets.xcassets */,
 				26835550224284BE00F6E670 /* Shared.xcconfig */,
@@ -270,6 +273,7 @@
 				263C5A9F2267982600DD908F /* App Transport Security */,
 				268C557F22404EC200AFDE9C /* Lint */,
 				4RJCCA56X92CTOVUGZQG8NXX /* Carthage */,
+				268C08DD226F4B8E0025E559 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -410,6 +414,23 @@
 			shellPath = /bin/sh;
 			shellScript = "$SRCROOT/Build\\ Phases/app-transport-security.sh\n";
 		};
+		268C08DD226F4B8E0025E559 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mint run krzysztofzablocki/sourcery sourcery --sources ./ --templates Templates/Configuration.stencil --output ./Kamu/Supporting\\ Files --args url=\\\"$KAMU_URL\\\"\n";
+		};
 		268C557F22404EC200AFDE9C /* Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				268C08D3226E47CF0025E559 /* Response.swift in Sources */,
+				268C08DF226F4FF10025E559 /* Configuration.generated.swift in Sources */,
 				26522264225C130200DC3BE5 /* Capture.swift in Sources */,
 				268C55542240244B00AFDE9C /* ViewController.swift in Sources */,
 				2676C5A32267AD22002D9B08 /* Book.swift in Sources */,

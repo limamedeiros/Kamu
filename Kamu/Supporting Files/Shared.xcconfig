@@ -1,2 +1,4 @@
 IDENTIFIER = com.limamedeiros.test.kamu
 NAME = Kamu
+
+SLASH = /
