@@ -4,7 +4,7 @@ default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 project_type: ios
 trigger_map:
 - push_branch: master
-  workflow: deploy
+  workflow: develop
 - push_branch: "*"
   workflow: develop
 - pull_request_source_branch: "*"
@@ -35,10 +35,22 @@ workflows:
     - git-clone@4.0.14: {}
     - cache-pull@2.0.1: {}
     - certificate-and-profile-installer@1.10.1: {}
-    - cache-push@2.1.1: {}
+    - script:
+        inputs:
+        - content: |-
+            #!/usr/bin/env bash
+            # fail if any commands fails
+            set -e
+            # debug log
+            set -x
+
+            # write your script here
+            brew update
+            brew upgrade mint || brew install mint || true
+            mint install krzysztofzablocki/Sourcery@0.16.0
     - carthage:
         inputs:
-        - carthage_options: "--no-use-binaries --platform iOS"
+        - carthage_options: "--no-use-binaries --platform iOS --cache-builds"
     - git::https://github.com/limamedeiros/bitrise-step-swiftlint@master:
         inputs:
         - reporter: html
@@ -47,6 +59,9 @@ workflows:
         - project_path: "$BITRISE_PROJECT_PATH"
         - generate_code_coverage_files: 'yes'
         - scheme: "$BITRISE_SCHEME"
+    - cache-push@2.1.1:
+        inputs:
+        - cache_paths: "./Carthage -> ./Carthage/Cachefile\n"
     - deploy-to-bitrise-io@1.3.19: {}
     envs:
     - opts:
