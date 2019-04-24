@@ -1,6 +1,5 @@
 import Foundation
 
-struct Response: Decodable {
-  let count: Int
-  let results: [Book]
+struct Root<T: Decodable>: Decodable {
+  let results: T
 }

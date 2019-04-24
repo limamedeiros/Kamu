@@ -432,7 +432,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sourcery --sources ./ --templates Templates/Configuration.stencil --output ./Kamu/Supporting\\ Files --args url=\\\"$KAMU_URL\\\"\n";
+			shellScript = "#sourcery --sources ./ --templates Templates/Configuration.stencil --output ./Kamu/Supporting\\ Files --args url=\\\"$KAMU_URL\\\"\n";
 		};
 		268C557F22404EC200AFDE9C /* Lint */ = {
 			isa = PBXShellScriptBuildPhase;
