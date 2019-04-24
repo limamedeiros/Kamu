@@ -1,19 +1,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-  var scanner: Scanner!
+  var reader: Reader!
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    scanner = Scanner(view: view, completion: { result in
+    let network = Network()
+
+    network.books { result in
       switch result {
-      case let .success(code):
-        print("Code: \(code)")
-      case .failure:
-        print("Fail at configuration")
+      case let .success(books):
+        dump(books)
+      case let .failure(error):
+        dump(error)
       }
-    })
-    scanner.start()
+    }
+
+//    reader = Reader(view: view, completion: { result in
+//      switch result {
+//      case let .success(code):
+//        print("Code: \(code)")
+//      case .failure:
+//        print("Fail at configuration")
+//      }
+//    })
+//    reader.start()
   }
 }

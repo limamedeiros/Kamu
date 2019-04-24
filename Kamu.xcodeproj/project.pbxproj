@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263C5A98226787D300DD908F /* Kamu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C5A97226787D300DD908F /* Kamu.swift */; };
+		263C5A9A22678CF300DD908F /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263C5A9922678CF300DD908F /* Moya.framework */; };
+		263C5A9C22678D8200DD908F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263C5A9B22678D8200DD908F /* Result.framework */; };
+		263C5A9E22678DB100DD908F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263C5A9D22678DB100DD908F /* Alamofire.framework */; };
 		2652225F225BD37E00DC3BE5 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2652225D225BD37E00DC3BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26522260225BD37E00DC3BE5 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2652225E225BD37E00DC3BE5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		26522262225BDCFC00DC3BE5 /* ScannerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522261225BDCFC00DC3BE5 /* ScannerSpec.swift */; };
+		26522262225BDCFC00DC3BE5 /* ReaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */; };
 		26522264225C130200DC3BE5 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522263225C130200DC3BE5 /* Capture.swift */; };
-		26634834224A9B0000EA2539 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26634833224A9B0000EA2539 /* Scanner.swift */; };
+		26634834224A9B0000EA2539 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26634833224A9B0000EA2539 /* Reader.swift */; };
+		2676C5A12267A749002D9B08 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A02267A749002D9B08 /* Network.swift */; };
+		2676C5A32267AD22002D9B08 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A22267AD22002D9B08 /* Book.swift */; };
+		268C08D3226E47CF0025E559 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D2226E47CF0025E559 /* Root.swift */; };
+		268C08DA226E4C8F0025E559 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D9226E4C8F0025E559 /* NetworkSpec.swift */; };
+		268C08DB226E76DC0025E559 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 268C08D7226E4C0E0025E559 /* books.json */; };
+		268C08DF226F4FF10025E559 /* Configuration.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08DE226F4FF10025E559 /* Configuration.generated.swift */; };
+		268C08E1226F97920025E559 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08E0226F97920025E559 /* Completion.swift */; };
 		268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55512240244B00AFDE9C /* AppDelegate.swift */; };
 		268C55542240244B00AFDE9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55532240244B00AFDE9C /* ViewController.swift */; };
 		268C55592240244E00AFDE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268C55582240244E00AFDE9C /* Assets.xcassets */; };
@@ -57,14 +68,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		263C5A97226787D300DD908F /* Kamu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kamu.swift; sourceTree = "<group>"; };
+		263C5A9922678CF300DD908F /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		263C5A9B22678D8200DD908F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		263C5A9D22678DB100DD908F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		2652225D225BD37E00DC3BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		2652225E225BD37E00DC3BE5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		26522261225BDCFC00DC3BE5 /* ScannerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerSpec.swift; sourceTree = "<group>"; };
+		26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderSpec.swift; sourceTree = "<group>"; };
 		26522263225C130200DC3BE5 /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
-		26634833224A9B0000EA2539 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		26634833224A9B0000EA2539 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		2676C5A02267A749002D9B08 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		2676C5A22267AD22002D9B08 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		2683554E2242848400F6E670 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2683554F2242849900F6E670 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		26835550224284BE00F6E670 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		268C08D2226E47CF0025E559 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		268C08D7226E4C0E0025E559 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
+		268C08D9226E4C8F0025E559 /* NetworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpec.swift; sourceTree = "<group>"; };
+		268C08DE226F4FF10025E559 /* Configuration.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.generated.swift; sourceTree = "<group>"; };
+		268C08E0226F97920025E559 /* Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
 		268C554E2240244B00AFDE9C /* Kamu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kamu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55512240244B00AFDE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		268C55532240244B00AFDE9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263C5A9A22678CF300DD908F /* Moya.framework in Frameworks */,
+				263C5A9C22678D8200DD908F /* Result.framework in Frameworks */,
+				263C5A9E22678DB100DD908F /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +138,7 @@
 		268355512242A66200F6E670 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				268C08DE226F4FF10025E559 /* Configuration.generated.swift */,
 				268C555D2240244E00AFDE9C /* Info.plist */,
 				268C55582240244E00AFDE9C /* Assets.xcassets */,
 				26835550224284BE00F6E670 /* Shared.xcconfig */,
@@ -120,6 +146,42 @@
 				2683554E2242848400F6E670 /* Debug.xcconfig */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		268C08D4226E47DC0025E559 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2676C5A22267AD22002D9B08 /* Book.swift */,
+				268C08D2226E47CF0025E559 /* Root.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		268C08D5226E47E80025E559 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2676C5A02267A749002D9B08 /* Network.swift */,
+				268C08E0226F97920025E559 /* Completion.swift */,
+				263C5A97226787D300DD908F /* Kamu.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		268C08D6226E47F40025E559 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				26522263225C130200DC3BE5 /* Capture.swift */,
+				26634833224A9B0000EA2539 /* Reader.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		268C08DC226E77C00025E559 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				268C08D7226E4C0E0025E559 /* books.json */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		268C55452240244B00AFDE9C = {
@@ -151,8 +213,9 @@
 			children = (
 				268C55512240244B00AFDE9C /* AppDelegate.swift */,
 				268C55532240244B00AFDE9C /* ViewController.swift */,
-				26634833224A9B0000EA2539 /* Scanner.swift */,
-				26522263225C130200DC3BE5 /* Capture.swift */,
+				268C08D4226E47DC0025E559 /* Models */,
+				268C08D5226E47E80025E559 /* Network */,
+				268C08D6226E47F40025E559 /* Reader */,
 				268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */,
 				268355512242A66200F6E670 /* Supporting Files */,
 			);
@@ -163,7 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				26C50320225CE6B400D92090 /* Mocks */,
-				26522261225BDCFC00DC3BE5 /* ScannerSpec.swift */,
+				268C08DC226E77C00025E559 /* Stubs */,
+				26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */,
+				268C08D9226E4C8F0025E559 /* NetworkSpec.swift */,
 				268C55682240244E00AFDE9C /* Info.plist */,
 			);
 			path = "Unit Tests";
@@ -189,6 +254,9 @@
 		26DFAA8C2252A46F007E5109 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				263C5A9D22678DB100DD908F /* Alamofire.framework */,
+				263C5A9B22678D8200DD908F /* Result.framework */,
+				263C5A9922678CF300DD908F /* Moya.framework */,
 				26DFAA8E2252A46F007E5109 /* Nimble.framework */,
 				26DFAA8D2252A46F007E5109 /* Quick.framework */,
 			);
@@ -205,8 +273,10 @@
 				268C554A2240244B00AFDE9C /* Sources */,
 				268C554B2240244B00AFDE9C /* Frameworks */,
 				268C554C2240244B00AFDE9C /* Resources */,
+				263C5A9F2267982600DD908F /* App Transport Security */,
 				268C557F22404EC200AFDE9C /* Lint */,
 				4RJCCA56X92CTOVUGZQG8NXX /* Carthage */,
+				268C08DD226F4B8E0025E559 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -305,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268C08DB226E76DC0025E559 /* books.json in Resources */,
 				268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */,
 				268C55592240244E00AFDE9C /* Assets.xcassets in Resources */,
 			);
@@ -327,6 +398,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		263C5A9F2267982600DD908F /* App Transport Security */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "App Transport Security";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/Build\\ Phases/app-transport-security.sh\n";
+		};
+		268C08DD226F4B8E0025E559 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sourcery --sources ./ --templates Templates/Configuration.stencil --output ./Kamu/Supporting\\ Files --args url=\\\"$KAMU_URL\\\"\n";
+		};
 		268C557F22404EC200AFDE9C /* Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,7 +470,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [! -z \"$CI\" ]; then\n    OUTPUT_FILE=\"${PROJECT_DIR}/Unit Tests/Mocks/GeneratedMocks.swift\"\n    echo \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n    INPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\n    echo \"Mocks Input Directory = ${INPUT_DIR}\"\n\n    \"Carthage/Checkouts/Cuckoo/run\" --download 0.12.1 generate --testable \"${PROJECT_NAME}\" \\\n    --output \"${OUTPUT_FILE}\"\nfi\n";
+			shellScript = "$SRCROOT/Build\\ Phases/cuckoo.sh\n";
 		};
 		4RJCCA56X92CTOVUGZQG8NXX /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -393,9 +500,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268C08D3226E47CF0025E559 /* Root.swift in Sources */,
+				268C08DF226F4FF10025E559 /* Configuration.generated.swift in Sources */,
 				26522264225C130200DC3BE5 /* Capture.swift in Sources */,
 				268C55542240244B00AFDE9C /* ViewController.swift in Sources */,
-				26634834224A9B0000EA2539 /* Scanner.swift in Sources */,
+				2676C5A32267AD22002D9B08 /* Book.swift in Sources */,
+				268C08E1226F97920025E559 /* Completion.swift in Sources */,
+				2676C5A12267A749002D9B08 /* Network.swift in Sources */,
+				26634834224A9B0000EA2539 /* Reader.swift in Sources */,
+				263C5A98226787D300DD908F /* Kamu.swift in Sources */,
 				268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,8 +517,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26522262225BDCFC00DC3BE5 /* ScannerSpec.swift in Sources */,
+				26522262225BDCFC00DC3BE5 /* ReaderSpec.swift in Sources */,
 				26C5031E225CE6A300D92090 /* GeneratedMocks.swift in Sources */,
+				268C08DA226E4C8F0025E559 /* NetworkSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +687,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Kamu/Supporting Files/Info.plist";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,6 +713,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Kamu/Supporting Files/Info.plist";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

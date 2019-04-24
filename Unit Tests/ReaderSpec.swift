@@ -10,7 +10,7 @@ class ScannerSpec: QuickSpec {
     var mockCapture: MockCapture!
     var view: UIView!
 
-    var sut: Kamu.Scanner!
+    var sut: Reader!
 
     beforeEach {
       mockCapture = MockCapture()
@@ -23,10 +23,10 @@ class ScannerSpec: QuickSpec {
       }
     }
 
-    describe("Scanner") {
+    describe("Reader") {
       beforeEach {
         view = UIView()
-        sut = Kamu.Scanner(view: view, capture: mockCapture, completion: { _ in })
+        sut = Reader(view: view, capture: mockCapture, completion: { _ in })
       }
 
       context("It's initialized") {
@@ -44,12 +44,12 @@ class ScannerSpec: QuickSpec {
     describe("Starting") {
       context("Configuring capture session") {
         it("Should error since capture session is not available") {
-          sut = Kamu.Scanner(view: view, capture: mockCapture, completion: { result in
+          sut = Reader(view: view, capture: mockCapture, completion: { result in
             switch result {
             case .success:
               fail()
             case let .failure(error):
-              expect(error).to(beAKindOf(Kamu.Scanner.Error.self))
+              expect(error).to(beAKindOf(Reader.Error.self))
             }
           })
 
@@ -59,10 +59,10 @@ class ScannerSpec: QuickSpec {
       }
     }
 
-    describe("Scanning") {
+    describe("Reading") {
       context("Found ISBN") {
         it("Should receive ISBN code in completion") {
-          sut = Kamu.Scanner(view: view, capture: mockCapture, completion: { result in
+          sut = Reader(view: view, capture: mockCapture, completion: { result in
             switch result {
             case let .success(code):
               expect(code).to(be("123"))

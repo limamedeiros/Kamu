@@ -1,15 +1,9 @@
-//
-//  Debug.xcconfig
-//  Kamu
-//
-//  Created by Vanessa Medeiros on 20/03/19.
-//
-
-// Configuration settings file format documentation can be found at:
-// https://help.apple.com/xcode/#/dev745c5c974
-
 #include "Shared.xcconfig"
 
 BUNDLE_IDENTIFIER = $(IDENTIFIER).debug
 DISPLAY_NAME = $(NAME) Debug
 BUNDLE_NAME = $(NAME) Debug
+
+INFOPLIST_PREPROCESSOR_DEFINITIONS = $(inherited)
+
+KAMU_URL = http:$(SLASH)/localhost:9797

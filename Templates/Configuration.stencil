@@ -1,0 +1,8 @@
+import Foundation
+
+struct Configuration {
+
+    private init() {}
+
+    static let url = URL(string: "{{ argument.url }}")!
+}
