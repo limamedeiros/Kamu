@@ -22,7 +22,15 @@ class NetworkSpec: QuickSpec {
               switch result {
               case let .success(books):
                 expect(books).to(beAKindOf([Book].self))
+                expect(books.count).to(be(3))
+
+                expect(books.first?.author).to(equal("Editora Abril"))
+                expect(books.first?.isbn).to(beNil())
+                expect(books.first?.publisher).to(equal("Editora Abril"))
+                expect(books.first?.title).to(equal("A bíblia do Office 2010"))
+
                 done()
+
               case let .failure(error):
                 fail(error.localizedDescription)
               }

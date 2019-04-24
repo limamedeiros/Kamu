@@ -18,7 +18,7 @@
 		26634834224A9B0000EA2539 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26634833224A9B0000EA2539 /* Reader.swift */; };
 		2676C5A12267A749002D9B08 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A02267A749002D9B08 /* Network.swift */; };
 		2676C5A32267AD22002D9B08 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A22267AD22002D9B08 /* Book.swift */; };
-		268C08D3226E47CF0025E559 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D2226E47CF0025E559 /* Response.swift */; };
+		268C08D3226E47CF0025E559 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D2226E47CF0025E559 /* Root.swift */; };
 		268C08DA226E4C8F0025E559 /* NetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D9226E4C8F0025E559 /* NetworkSpec.swift */; };
 		268C08DB226E76DC0025E559 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 268C08D7226E4C0E0025E559 /* books.json */; };
 		268C08DF226F4FF10025E559 /* Configuration.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08DE226F4FF10025E559 /* Configuration.generated.swift */; };
@@ -82,7 +82,7 @@
 		2683554E2242848400F6E670 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2683554F2242849900F6E670 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		26835550224284BE00F6E670 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
-		268C08D2226E47CF0025E559 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		268C08D2226E47CF0025E559 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		268C08D7226E4C0E0025E559 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		268C08D9226E4C8F0025E559 /* NetworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpec.swift; sourceTree = "<group>"; };
 		268C08DE226F4FF10025E559 /* Configuration.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.generated.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				2676C5A22267AD22002D9B08 /* Book.swift */,
-				268C08D2226E47CF0025E559 /* Response.swift */,
+				268C08D2226E47CF0025E559 /* Root.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -432,7 +432,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#sourcery --sources ./ --templates Templates/Configuration.stencil --output ./Kamu/Supporting\\ Files --args url=\\\"$KAMU_URL\\\"\n";
+			shellScript = "sourcery --sources ./ --templates Templates/Configuration.stencil --output ./Kamu/Supporting\\ Files --args url=\\\"$KAMU_URL\\\"\n";
 		};
 		268C557F22404EC200AFDE9C /* Lint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -500,7 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				268C08D3226E47CF0025E559 /* Response.swift in Sources */,
+				268C08D3226E47CF0025E559 /* Root.swift in Sources */,
 				268C08DF226F4FF10025E559 /* Configuration.generated.swift in Sources */,
 				26522264225C130200DC3BE5 /* Capture.swift in Sources */,
 				268C55542240244B00AFDE9C /* ViewController.swift in Sources */,
