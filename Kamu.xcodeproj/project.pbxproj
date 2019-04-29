@@ -16,7 +16,6 @@
 		26522262225BDCFC00DC3BE5 /* ReaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */; };
 		26522264225C130200DC3BE5 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522263225C130200DC3BE5 /* Capture.swift */; };
 		26634834224A9B0000EA2539 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26634833224A9B0000EA2539 /* Reader.swift */; };
-		266380F822738F9800A4572F /* kamu_wings_animation_v2.json in Resources */ = {isa = PBXBuildFile; fileRef = 266380F722738F9800A4572F /* kamu_wings_animation_v2.json */; };
 		266380FA2273902300A4572F /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266380F92273902300A4572F /* Lottie.framework */; };
 		266380FC2273930800A4572F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266380FB2273930800A4572F /* SplashViewController.swift */; };
 		2676C5A12267A749002D9B08 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A02267A749002D9B08 /* Network.swift */; };
@@ -33,6 +32,8 @@
 		268C55722240244E00AFDE9C /* KamuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55712240244E00AFDE9C /* KamuUITests.swift */; };
 		2690FE2D227766DF001D5A56 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690FE2C227766DF001D5A56 /* TinyConstraints.framework */; };
 		2690FE2F22777745001D5A56 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2690FE2E22777745001D5A56 /* Colors.xcassets */; };
+		2690FE3122777D8E001D5A56 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2690FE3022777D8E001D5A56 /* Animations.xcassets */; };
+		2690FE332277846F001D5A56 /* Lottie+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2690FE322277846F001D5A56 /* Lottie+Extensions.swift */; };
 		26BC82EE2273963A004439A7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC82ED2273963A004439A7 /* SplashView.swift */; };
 		26C5031A225CE3CD00D92090 /* Cuckoo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26C50319225CE3CD00D92090 /* Cuckoo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26C5031B225CE3DB00D92090 /* Cuckoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C50319225CE3CD00D92090 /* Cuckoo.framework */; };
@@ -83,7 +84,6 @@
 		26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderSpec.swift; sourceTree = "<group>"; };
 		26522263225C130200DC3BE5 /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
 		26634833224A9B0000EA2539 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
-		266380F722738F9800A4572F /* kamu_wings_animation_v2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kamu_wings_animation_v2.json; sourceTree = "<group>"; };
 		266380F92273902300A4572F /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		266380FB2273930800A4572F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		2676C5A02267A749002D9B08 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -109,6 +109,8 @@
 		268C55732240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2690FE2C227766DF001D5A56 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
 		2690FE2E22777745001D5A56 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2690FE3022777D8E001D5A56 /* Animations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animations.xcassets; sourceTree = "<group>"; };
+		2690FE322277846F001D5A56 /* Lottie+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lottie+Extensions.swift"; sourceTree = "<group>"; };
 		26BC82ED2273963A004439A7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		26C50319225CE3CD00D92090 /* Cuckoo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cuckoo.framework; path = Carthage/Build/iOS/Cuckoo.framework; sourceTree = "<group>"; };
 		26C5031D225CE6A300D92090 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
@@ -152,10 +154,10 @@
 		268355512242A66200F6E670 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				266380F722738F9800A4572F /* kamu_wings_animation_v2.json */,
 				268C08DE226F4FF10025E559 /* Configuration.generated.swift */,
 				268C555D2240244E00AFDE9C /* Info.plist */,
 				268C55582240244E00AFDE9C /* Assets.xcassets */,
+				2690FE3022777D8E001D5A56 /* Animations.xcassets */,
 				2690FE2E22777745001D5A56 /* Colors.xcassets */,
 				26835550224284BE00F6E670 /* Shared.xcconfig */,
 				2683554F2242849900F6E670 /* Release.xcconfig */,
@@ -231,6 +233,7 @@
 				268C55532240244B00AFDE9C /* ViewController.swift */,
 				266380FB2273930800A4572F /* SplashViewController.swift */,
 				26BC82ED2273963A004439A7 /* SplashView.swift */,
+				2690FE322277846F001D5A56 /* Lottie+Extensions.swift */,
 				268C08D4226E47DC0025E559 /* Models */,
 				268C08D5226E47E80025E559 /* Network */,
 				268C08D6226E47F40025E559 /* Reader */,
@@ -395,11 +398,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2690FE3122777D8E001D5A56 /* Animations.xcassets in Resources */,
 				2690FE2F22777745001D5A56 /* Colors.xcassets in Resources */,
 				268C08DB226E76DC0025E559 /* books.json in Resources */,
 				268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */,
 				268C55592240244E00AFDE9C /* Assets.xcassets in Resources */,
-				266380F822738F9800A4572F /* kamu_wings_animation_v2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +530,7 @@
 				26522264225C130200DC3BE5 /* Capture.swift in Sources */,
 				268C55542240244B00AFDE9C /* ViewController.swift in Sources */,
 				2676C5A32267AD22002D9B08 /* Book.swift in Sources */,
+				2690FE332277846F001D5A56 /* Lottie+Extensions.swift in Sources */,
 				26BC82EE2273963A004439A7 /* SplashView.swift in Sources */,
 				268C08E1226F97920025E559 /* Completion.swift in Sources */,
 				2676C5A12267A749002D9B08 /* Network.swift in Sources */,
