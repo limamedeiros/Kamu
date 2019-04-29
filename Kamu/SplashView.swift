@@ -12,7 +12,7 @@ class SplashView: UIView {
 
   override init(frame: CGRect) {
     super.init(frame: frame)
-    backgroundColor = .white
+    backgroundColor = UIColor(named: "Background")
 
     let animation = AnimationView(name: "kamu_wings_animation_v2")
     addSubview(animation)
@@ -22,7 +22,7 @@ class SplashView: UIView {
       animation.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor, constant: 0)
     ])
 
-    animation.play()
+//    animation.play()
   }
 
   required init?(coder aDecoder: NSCoder) {

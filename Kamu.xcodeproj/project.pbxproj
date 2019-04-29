@@ -32,6 +32,7 @@
 		268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */; };
 		268C55722240244E00AFDE9C /* KamuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55712240244E00AFDE9C /* KamuUITests.swift */; };
 		2690FE2D227766DF001D5A56 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690FE2C227766DF001D5A56 /* TinyConstraints.framework */; };
+		2690FE2F22777745001D5A56 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2690FE2E22777745001D5A56 /* Colors.xcassets */; };
 		26BC82EE2273963A004439A7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC82ED2273963A004439A7 /* SplashView.swift */; };
 		26C5031A225CE3CD00D92090 /* Cuckoo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26C50319225CE3CD00D92090 /* Cuckoo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26C5031B225CE3DB00D92090 /* Cuckoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C50319225CE3CD00D92090 /* Cuckoo.framework */; };
@@ -107,6 +108,7 @@
 		268C55712240244E00AFDE9C /* KamuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamuUITests.swift; sourceTree = "<group>"; };
 		268C55732240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2690FE2C227766DF001D5A56 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		2690FE2E22777745001D5A56 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		26BC82ED2273963A004439A7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		26C50319225CE3CD00D92090 /* Cuckoo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cuckoo.framework; path = Carthage/Build/iOS/Cuckoo.framework; sourceTree = "<group>"; };
 		26C5031D225CE6A300D92090 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				268C08DE226F4FF10025E559 /* Configuration.generated.swift */,
 				268C555D2240244E00AFDE9C /* Info.plist */,
 				268C55582240244E00AFDE9C /* Assets.xcassets */,
+				2690FE2E22777745001D5A56 /* Colors.xcassets */,
 				26835550224284BE00F6E670 /* Shared.xcconfig */,
 				2683554F2242849900F6E670 /* Release.xcconfig */,
 				2683554E2242848400F6E670 /* Debug.xcconfig */,
@@ -392,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2690FE2F22777745001D5A56 /* Colors.xcassets in Resources */,
 				268C08DB226E76DC0025E559 /* books.json in Resources */,
 				268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */,
 				268C55592240244E00AFDE9C /* Assets.xcassets in Resources */,
