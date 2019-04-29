@@ -16,6 +16,9 @@
 		26522262225BDCFC00DC3BE5 /* ReaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */; };
 		26522264225C130200DC3BE5 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26522263225C130200DC3BE5 /* Capture.swift */; };
 		26634834224A9B0000EA2539 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26634833224A9B0000EA2539 /* Reader.swift */; };
+		266380F822738F9800A4572F /* kamu_wings_animation_v2.json in Resources */ = {isa = PBXBuildFile; fileRef = 266380F722738F9800A4572F /* kamu_wings_animation_v2.json */; };
+		266380FA2273902300A4572F /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266380F92273902300A4572F /* Lottie.framework */; };
+		266380FC2273930800A4572F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266380FB2273930800A4572F /* SplashViewController.swift */; };
 		2676C5A12267A749002D9B08 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A02267A749002D9B08 /* Network.swift */; };
 		2676C5A32267AD22002D9B08 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2676C5A22267AD22002D9B08 /* Book.swift */; };
 		268C08D3226E47CF0025E559 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C08D2226E47CF0025E559 /* Root.swift */; };
@@ -28,6 +31,8 @@
 		268C55592240244E00AFDE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268C55582240244E00AFDE9C /* Assets.xcassets */; };
 		268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */; };
 		268C55722240244E00AFDE9C /* KamuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55712240244E00AFDE9C /* KamuUITests.swift */; };
+		2690FE2D227766DF001D5A56 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690FE2C227766DF001D5A56 /* TinyConstraints.framework */; };
+		26BC82EE2273963A004439A7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC82ED2273963A004439A7 /* SplashView.swift */; };
 		26C5031A225CE3CD00D92090 /* Cuckoo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26C50319225CE3CD00D92090 /* Cuckoo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26C5031B225CE3DB00D92090 /* Cuckoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C50319225CE3CD00D92090 /* Cuckoo.framework */; };
 		26C5031E225CE6A300D92090 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C5031D225CE6A300D92090 /* GeneratedMocks.swift */; };
@@ -77,6 +82,9 @@
 		26522261225BDCFC00DC3BE5 /* ReaderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderSpec.swift; sourceTree = "<group>"; };
 		26522263225C130200DC3BE5 /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
 		26634833224A9B0000EA2539 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		266380F722738F9800A4572F /* kamu_wings_animation_v2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kamu_wings_animation_v2.json; sourceTree = "<group>"; };
+		266380F92273902300A4572F /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		266380FB2273930800A4572F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		2676C5A02267A749002D9B08 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		2676C5A22267AD22002D9B08 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		2683554E2242848400F6E670 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -98,6 +106,8 @@
 		268C556D2240244E00AFDE9C /* UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55712240244E00AFDE9C /* KamuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamuUITests.swift; sourceTree = "<group>"; };
 		268C55732240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2690FE2C227766DF001D5A56 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		26BC82ED2273963A004439A7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		26C50319225CE3CD00D92090 /* Cuckoo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cuckoo.framework; path = Carthage/Build/iOS/Cuckoo.framework; sourceTree = "<group>"; };
 		26C5031D225CE6A300D92090 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		26DFAA8D2252A46F007E5109 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -112,6 +122,8 @@
 				263C5A9A22678CF300DD908F /* Moya.framework in Frameworks */,
 				263C5A9C22678D8200DD908F /* Result.framework in Frameworks */,
 				263C5A9E22678DB100DD908F /* Alamofire.framework in Frameworks */,
+				2690FE2D227766DF001D5A56 /* TinyConstraints.framework in Frameworks */,
+				266380FA2273902300A4572F /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +150,7 @@
 		268355512242A66200F6E670 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				266380F722738F9800A4572F /* kamu_wings_animation_v2.json */,
 				268C08DE226F4FF10025E559 /* Configuration.generated.swift */,
 				268C555D2240244E00AFDE9C /* Info.plist */,
 				268C55582240244E00AFDE9C /* Assets.xcassets */,
@@ -213,6 +226,8 @@
 			children = (
 				268C55512240244B00AFDE9C /* AppDelegate.swift */,
 				268C55532240244B00AFDE9C /* ViewController.swift */,
+				266380FB2273930800A4572F /* SplashViewController.swift */,
+				26BC82ED2273963A004439A7 /* SplashView.swift */,
 				268C08D4226E47DC0025E559 /* Models */,
 				268C08D5226E47E80025E559 /* Network */,
 				268C08D6226E47F40025E559 /* Reader */,
@@ -254,6 +269,8 @@
 		26DFAA8C2252A46F007E5109 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2690FE2C227766DF001D5A56 /* TinyConstraints.framework */,
+				266380F92273902300A4572F /* Lottie.framework */,
 				263C5A9D22678DB100DD908F /* Alamofire.framework */,
 				263C5A9B22678D8200DD908F /* Result.framework */,
 				263C5A9922678CF300DD908F /* Moya.framework */,
@@ -378,6 +395,7 @@
 				268C08DB226E76DC0025E559 /* books.json in Resources */,
 				268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */,
 				268C55592240244E00AFDE9C /* Assets.xcassets in Resources */,
+				266380F822738F9800A4572F /* kamu_wings_animation_v2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +450,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sourcery --sources ./ --templates Templates/Configuration.stencil --output ./Kamu/Supporting\\ Files --args url=\\\"$KAMU_URL\\\"\n";
+			shellScript = "#sourcery --sources ./ --templates Templates/Configuration.stencil --output ./Kamu/Supporting\\ Files --args url=\\\"$KAMU_URL\\\"\n";
 		};
 		268C557F22404EC200AFDE9C /* Lint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -490,7 +508,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -505,11 +523,13 @@
 				26522264225C130200DC3BE5 /* Capture.swift in Sources */,
 				268C55542240244B00AFDE9C /* ViewController.swift in Sources */,
 				2676C5A32267AD22002D9B08 /* Book.swift in Sources */,
+				26BC82EE2273963A004439A7 /* SplashView.swift in Sources */,
 				268C08E1226F97920025E559 /* Completion.swift in Sources */,
 				2676C5A12267A749002D9B08 /* Network.swift in Sources */,
 				26634834224A9B0000EA2539 /* Reader.swift in Sources */,
 				263C5A98226787D300DD908F /* Kamu.swift in Sources */,
 				268C55522240244B00AFDE9C /* AppDelegate.swift in Sources */,
+				266380FC2273930800A4572F /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
