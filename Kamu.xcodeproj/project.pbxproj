@@ -30,7 +30,6 @@
 		268C55592240244E00AFDE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268C55582240244E00AFDE9C /* Assets.xcassets */; };
 		268C555C2240244E00AFDE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268C555A2240244E00AFDE9C /* LaunchScreen.storyboard */; };
 		268C55722240244E00AFDE9C /* KamuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C55712240244E00AFDE9C /* KamuUITests.swift */; };
-		2690FE2D227766DF001D5A56 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690FE2C227766DF001D5A56 /* TinyConstraints.framework */; };
 		2690FE2F22777745001D5A56 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2690FE2E22777745001D5A56 /* Colors.xcassets */; };
 		2690FE3122777D8E001D5A56 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2690FE3022777D8E001D5A56 /* Animations.xcassets */; };
 		2690FE332277846F001D5A56 /* Lottie+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2690FE322277846F001D5A56 /* Lottie+Extensions.swift */; };
@@ -107,7 +106,6 @@
 		268C556D2240244E00AFDE9C /* UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268C55712240244E00AFDE9C /* KamuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamuUITests.swift; sourceTree = "<group>"; };
 		268C55732240244E00AFDE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2690FE2C227766DF001D5A56 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
 		2690FE2E22777745001D5A56 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2690FE3022777D8E001D5A56 /* Animations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animations.xcassets; sourceTree = "<group>"; };
 		2690FE322277846F001D5A56 /* Lottie+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lottie+Extensions.swift"; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				263C5A9A22678CF300DD908F /* Moya.framework in Frameworks */,
 				263C5A9C22678D8200DD908F /* Result.framework in Frameworks */,
 				263C5A9E22678DB100DD908F /* Alamofire.framework in Frameworks */,
-				2690FE2D227766DF001D5A56 /* TinyConstraints.framework in Frameworks */,
 				266380FA2273902300A4572F /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +272,6 @@
 		26DFAA8C2252A46F007E5109 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2690FE2C227766DF001D5A56 /* TinyConstraints.framework */,
 				266380F92273902300A4572F /* Lottie.framework */,
 				263C5A9D22678DB100DD908F /* Alamofire.framework */,
 				263C5A9B22678D8200DD908F /* Result.framework */,
